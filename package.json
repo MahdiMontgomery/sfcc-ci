@@ -12,9 +12,7 @@
     "test:unit": "mocha test/unit --recursive",
     "test:unit:coverage": "istanbul cover _mocha test/unit --recursive",
     "test:functional:cli": "bin/test-cli.sh",
-    "dist": "pkg . --out-path dist/",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "dist": "pkg . --out-path dist/"
   },
   "repository": {
     "type": "git",
@@ -40,7 +38,6 @@
     "request": "^2.88.0",
     "request-debug": "^0.2.0",
     "table": "^5.0.2",
-    "snyk": "^1.667.0"
   },
   "devDependencies": {
     "archiver": "^5.0.0",
@@ -57,6 +54,5 @@
     "pkg": "^4.3.4",
     "proxyquire": "^2.1.0",
     "sinon": "^7.2.2"
-  },
-  "snyk": true
+  }
 }
